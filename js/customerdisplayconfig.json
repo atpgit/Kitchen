@@ -1,0 +1,16 @@
+﻿{
+	"rows":2,
+	"columns":4,
+	"showOrderNumber":true,
+	"showOrderName":false,
+	"inProgressEnabled":true,
+	"readyLabel":"Siparişinizi Teslim Alabilirsiniz ",
+	"inProgressLabel":"Siparişiniz Hazırlanıyor",
+	"headerSubtitle":"",
+	"timer":false,
+	"bgColor":"transparent",
+	"cellColor":"transparent",
+	"adGraphics":[],
+	"headertopmargin":100,
+	"middletopmargin":200
+}

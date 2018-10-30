@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Siparis Ekran</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/brand.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/handlebars-v4.0.12.js" type="text/javascript"></script>
+	<script src="js/sampleOrders.js" type="text/javascript"></script>
+	<script  src="js/common.js" type="text/javascript"></script>
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+	<script id="inprogressOrder-template" type="text/x-handlebars-template">
+		{{#each inprogressOrders}}
+		<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+			<div class="thumbnail small-number-box  align-middle-center">
+				<div>{{number}}</div>
+			</div>
+		</div>
+		{{/each}}
+	  </script>
+	<script id="progressDone-template" type="text/x-handlebars-template">
+		{{#each doneProgress}}
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="thumbnail large-number-box  align-middle-center">
+				{{#if @first}}
+				<div class="blink">{{number}}</div>
+			{{else}}
+			<div>{{number}}</div>
+			{{/if}}
+			</div>
+		</div>
+		{{/each}}
+	</script>
+</head>
+
+<body style="overflow: hidden;line-height: 0.9">
+	<div class="container-fluid">
+		<div class="row top-number-area align-middle-center" style="padding:10px 0px">
+
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="row align-middle-center">
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<div class="text-h3 text-center">HAZIRLANIYOR</div>
+						<div class="sub-text text-center">BEING PREPARED</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="arrow-right"></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<div class="row" id="inProgressOrders">
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="row" class="align-middle-center">
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<div class="text-h1 text-red text-center">HAZIR</div>
+						<div class="sub-text text-red text-center">ORDER READY</div>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<div class="arrow-right arrow-right-red"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
+						<img src="images/BIG.LOGO.png" alt="" style="padding:0px 80px" />
+					</div>
+				</div>
+				<div id="legal" class="legal">
+			
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<div class="row" id="progressDone">
+
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="text-h2 text-red text-center">SİPARİŞİNİZİ ALABİLİRSİNİZ</div>
+						<div class="sub-text text-red text-center">TAKE YOUR ORDER</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	 	<script src="js/legal.js" type="text/javascript"></script>
+  	<script type="text/javascript">
+
+		  var year = new Date().getUTCFullYear();
+		  legal = legal.replace("#DATE#", year);
+		  document.getElementById("legal").innerHTML = legal;
+  	</script>
+	
+</body>
+</html>
