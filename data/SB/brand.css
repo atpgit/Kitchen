@@ -1,0 +1,21 @@
+body {  font-family: 'MasterFont';line-height: 0.9 }
+
+@font-face {
+    font-family: 'MasterFont';
+    font-weight: bold;
+
+    src: url('brandFont.otf') format('otf')
+}
+
+
+.top-number-area{
+    background-color:#EA2026;
+}
+
+.small-number-box{
+    background-color:#EA2026;
+}
+
+.large-number-box{
+    background-color:#6E3D2F20
+}

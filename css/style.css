@@ -1,10 +1,10 @@
-
+/*
 @font-face {
     font-family: 'MyriadProBoldSemiExtended';
     src: url('../fonts/legalFont.ttf');
     
 }
-
+*/
 
 .container-fluid img { width:100%; }
 .align-middle-center{
@@ -77,50 +77,4 @@
     0%{opacity: 1;color:#333}
     50%{opacity: 1;color:red}
     100%{opacity: 1;color:#333}
-  }
-
-
-
-
-.arrow-right {
-    width: 0; 
-    height: 0; 
-    float: right;
-    border-top: 2.3vw solid transparent;
-    border-bottom: 2.3vw solid transparent;
-    
-    border-left: 2.3vw solid white;
-  }
-  .arrow-right-red {
-    
-    border-left: 2.3vw solid #EB2026;
-  }
-  
-  .sub-text{
-      
-      font-size: 3.2vw;
-      color: white;
-  }
-  
-  .text-red{
-      color: red !important;
-  }
-  
-  .text-center{
-      text-align: center
-  }
-  
-  .text-h1{
-      font-size: 11vw;
-      color: white;
-  }
-  
-  .text-h2{
-      font-size: 5.9vw;
-      color: white;
-  }
-  
-  .text-h3{
-      font-size: 4.7vw;
-      color: white;
   }

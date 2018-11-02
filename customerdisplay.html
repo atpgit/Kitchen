@@ -11,7 +11,7 @@
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/brand.css" rel="stylesheet">
+	
 	<link href="css/responsive.css" rel="stylesheet">
 	
 	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -58,14 +58,9 @@
 
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div class="row align-middle-center">
-					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-						<div class="text-h3 text-center">HAZIRLANIYOR</div>
-						<div class="sub-text text-center">BEING PREPARED</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<img  alt="HAZIRLANIYOR" id="hazirlaniyorField" />
 					</div>
-					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<div class="arrow-right"></div>
-					</div>
-
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -77,21 +72,9 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div class="row" class="align-middle-center">
-					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-						<div class="text-h1 text-red text-center">HAZIR</div>
-						<div class="sub-text text-red text-center">ORDER READY</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<img alt="HAZIR" id="hazirField" />
 					</div>
-					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<div class="arrow-right arrow-right-red"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center">
-						<img src="images/BIG.LOGO.png" alt="" style="padding:0px 80px" />
-					</div>
-				</div>
-				<div id="legal" class="legal">
-			
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -100,21 +83,14 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="text-h2 text-red text-center">SİPARİŞİNİZİ ALABİLİRSİNİZ</div>
-						<div class="sub-text text-red text-center">TAKE YOUR ORDER</div>
+						<img alt="SİPARİŞİNİZİ ALABİLİRSİNİZ" id="altMesajField" />
 					</div>
 				</div>
 
 			</div>
 		</div>
 	</div>
-	 	<script src="js/legal.js" type="text/javascript"></script>
-  	<script type="text/javascript">
-
-		  var year = new Date().getUTCFullYear();
-		  legal = legal.replace("#DATE#", year);
-		  document.getElementById("legal").innerHTML = legal;
-  	</script>
-	
+	<script src="brand.js" type="text/javascript"></script>
+	<script src="js/initialize.js" type="text/javascript"></script>
 </body>
 </html>

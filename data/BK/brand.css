@@ -4,7 +4,7 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
     font-family: 'MasterFont';
     font-weight: bold;
 
-    src: url('../fonts/brandFont.otf');
+    src: url('brandFont.otf');
 }
 
 
@@ -19,11 +19,3 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
 .large-number-box{
     background-color:#6E3D2F20
 }  
-
-.brand-logo{
-    padding:0vw 5vw
-}
-
-.legal{
-    color:#6E3D2F;font-family: 'MyriadProBoldSemiExtended';font-size:0.45vw;text-align: center
-}
