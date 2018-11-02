@@ -4,18 +4,18 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
     font-family: 'MasterFont';
     font-weight: bold;
 
-    src: url('brandFont.ttf');
+    src: url('BK_brandFont.otf');
 }
 
 
 .top-number-area{
-    background-color:#D61921;
+    background-color:#6E3D2F;
 }
 
 .small-number-box{
-    background-color:#D61921;
+    background-color:#6E3D2F;
 }
 
 .large-number-box{
     background-color:#6E3D2F20
-}
+}  

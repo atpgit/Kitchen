@@ -4,18 +4,18 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
     font-family: 'MasterFont';
     font-weight: bold;
 
-    src: url('brandFont.otf');
+    src: url('PE_brandFont.otf');
 }
 
 
 .top-number-area{
-    background-color:#6E3D2F;
+    background-color:#AA192D;
 }
 
 .small-number-box{
-    background-color:#6E3D2F;
+    background-color:#AA192D;
 }
 
 .large-number-box{
     background-color:#6E3D2F20
-}  
+}

@@ -6,7 +6,7 @@
 }
 */
 
-.container-fluid img { width:100%; }
+.container-fluid img { width:92%; }
 .align-middle-center{
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -77,4 +77,10 @@
     0%{opacity: 1;color:#333}
     50%{opacity: 1;color:red}
     100%{opacity: 1;color:#333}
+  }
+
+  .altMessage{
+      position: fixed;
+      bottom: 0;
+      width: auto;
   }

@@ -1,1 +1,1 @@
-var brand = "data/BK";
+var brand = "BK";

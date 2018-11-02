@@ -4,16 +4,16 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
     font-family: 'MasterFont';
     font-weight: bold;
 
-    src: url('brandFont.otf');
+    src: url('AR_brandFont.ttf');
 }
 
 
 .top-number-area{
-    background-color:#000000;
+    background-color:#D61921;
 }
 
 .small-number-box{
-    background-color:#000000;
+    background-color:#D61921;
 }
 
 .large-number-box{
