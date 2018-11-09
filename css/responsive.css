@@ -1,29 +1,29 @@
 @media only screen and (min-width: 1280px) and (max-width: 1735px) {
-    .small-number-box { font-size:42px}
+    .small-number-box { font-size:120px}
 	.large-number-box {font-size:125px; }
 }
 
 @media only screen and (min-width: 1155px) and (max-width: 1280px) {
-    .small-number-box { font-size:40px}
+    .small-number-box { font-size:85px}
 	.large-number-box { height:215px;font-size:110px }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1155px) {
-    .small-number-box {height:90px;font-size:36px}
+    .small-number-box {height:90px;font-size:76px}
 	.large-number-box {height:225px;font-size:100px }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1079px) {
-    .small-number-box { height:88px;font-size:30px}
+    .small-number-box { height:88px;font-size:70px}
 	.large-number-box { height:220px;font-size:95px }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1025px) {
-    .small-number-box { height:88px;font-size:29px}
+    .small-number-box { height:88px;font-size:66px}
 	.large-number-box {height:220px;font-size:90px }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 890px) {
-    .small-number-box {height:100px;font-size:53px}
+    .small-number-box {height:100px;font-size:59px}
 }
 
