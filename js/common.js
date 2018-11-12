@@ -7,7 +7,7 @@ var timers = new Array();
 //
 // Defaults:
 var rows = 2;
-var columns = 3;
+var columns = 2;
 var showOrderNumber = true;
 var showOrderName = true;
 var inProgressEnabled = true;
