@@ -8,6 +8,16 @@ function fakeData() {
             isAddOn: false,
             state: STATUS_NOT_PREPARED
         });
+
+        orders.push(
+            {
+                id: 1,
+                number: "212",
+                name: "",
+                seat: "",
+                isAddOn: false,
+                state: STATUS_NOT_PREPARED
+            });
     //timers.push({ id: 1, number: "100", totalSeconds: 10 });
     orders.push({
         id: 2,

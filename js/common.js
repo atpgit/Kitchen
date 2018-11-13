@@ -83,7 +83,7 @@ function onLoad() {
 
 // This function configures the page settings from the generated JSON file
 function configure() {
-    $.getJSON("customerdisplayconfig.json", function (config) {
+    $.getJSON("../js/customerdisplayconfig.json", function (config) {
         // Set main configuration
         rows = config.rows;
         headertopmargin = config.headertopmargin;
