@@ -130,9 +130,16 @@ function GetDataFromService()
                 name: "",
                 seat: "",
                 isAddOn: false,
+                state: STATUS_NOT_PREPARED
+            });
+            orders.push({
+                id: 10,
+                number: data,//Generated Number
+                name: "",
+                seat: "",
+                isAddOn: false,
                 state: STATUS_SERVED
             });
-        
         }
 });
 

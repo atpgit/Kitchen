@@ -1,6 +1,6 @@
 ﻿{
 	"rows":2,
-	"columns":2,
+	"columns":3,
 	"showOrderNumber":true,
 	"showOrderName":false,
 	"inProgressEnabled":true,
