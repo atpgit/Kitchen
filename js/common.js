@@ -38,7 +38,7 @@ function inProgressOrdersPrereation() {
     var source = document.getElementById('inprogressOrder-template').innerHTML;
     var template = Handlebars.compile(source);
 
-    var inprogressOrdersWrapper = { inprogressOrders: getSubsetOfArray(getInProgressOrders()) };
+    var inprogressOrdersWrapper = { inprogressOrders: getSubsetOfArray(getInProgressOrders().reverse().slice(0, 4)) };
     var htmls = template(inprogressOrdersWrapper);
     $("#inProgressOrders").html(htmls);
 }
@@ -70,9 +70,9 @@ function doneOrdersPrereation() {
 
 function onLoad() {
     //This method gets static fake inprogress and ready orders
-    //fakeData();
+   // fakeData();
     //every 20 sec. this method pushes new order with dynamic order number to the order array
-   // setInterval(GetDataFromService, 6000);
+    //setInterval(GetDataFromService, 6000);
     configure();
     setInterval(onTick, 1000);
 
@@ -83,7 +83,7 @@ function onLoad() {
 
 // This function configures the page settings from the generated JSON file
 function configure() {
-    $.getJSON("customerdisplayconfig.json", function (config) {
+    $.getJSON("../js/customerdisplayconfig.json", function (config) {
         // Set main configuration
         rows = config.rows;
         headertopmargin = config.headertopmargin;
@@ -188,7 +188,7 @@ function removeOrderAtIndex(index) {
 // Utility method to get all the orders that are not yet ready
 function getInProgressOrders() {
     var inProgresOrders = new Array();
-    for (var i = 0; i < orders.length; i += 1) {
+    for (var i = 0;  i < orders.length; i += 1) {
         if (orders[i].state < STATUS_SERVED) {
             inProgresOrders.push(orders[i]);
         }
