@@ -1,4 +1,7 @@
-@media only screen and (min-width: 1280px) and (max-width: 1735px) {
+@media only screen and (min-width: 1366px) and (max-width: 1735px) {
+    .large-number-box {height:200px; }
+    }
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
     .small-number-box { font-size:120px}
 	.large-number-box {font-size:125px; }
 }
