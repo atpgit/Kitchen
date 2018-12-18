@@ -1,115 +1,29 @@
 function fakeData() {
-    orders.push(
-        {
-            id: 1,
-            number: "200",
-            name: "",
-            seat: "",
-            isAddOn: false,
-            state: STATUS_NOT_PREPARED
-        });
-
+    var notPreparedCount =Math.max(3, new Date().getTime() % 12);
+    var preparedCount =  Math.max(3,new Date().getTime() % 6);
+    for(var i=0;i<notPreparedCount;i++){
         orders.push(
             {
-                id: 1,
-                number: "212",
+                id: i,
+                number: 100 + i,
                 name: "",
                 seat: "",
                 isAddOn: false,
                 state: STATUS_NOT_PREPARED
             });
-    //timers.push({ id: 1, number: "100", totalSeconds: 10 });
-    orders.push({
-        id: 2,
-        number: "201",
-        name: "",
-        seat: "",
-        isAddOn: false,
-        state: STATUS_NOT_PREPARED
-    });
-    //timers.push({ id: 2, number: "101", totalSeconds: 10 });
-    orders.push({
-        id: 3,
-        number: "402",
-        name: "",
-        seat: "",
-        isAddOn: false,
-        state: STATUS_NOT_PREPARED
-    });
-    //timers.push({ id: 3, number: "102", totalSeconds: 10 });
-    orders.push({	
-        id:4,
-        number:"203",
-        name : "",
-        seat:"",
-        isAddOn:false,
-        state:STATUS_SERVED
-    });
-    // //timers.push({ id: 4, number: "103", totalSeconds: 10 });
-     orders.push({	
-         id:5,
-         number:"104",
-         name : "",
-         seat:"",
-         isAddOn:false,
-         state:STATUS_NOT_PREPARED
-     });
-     orders.push({	
-         id:6,
-         number:"105",
-         name : "",
-         seat:"",
-         isAddOn:false,
-         state:STATUS_NOT_PREPARED
-     });
-     orders.push({	
-         id:7,
-         number:"106",
-         name : "",
-         seat:"",
-         isAddOn:false,
-         state:STATUS_SERVED
-     });
-     orders.push({	
-         id:8,
-         number:"107",
-         name : "",
-         seat:"",
-         isAddOn:false,
-         state:STATUS_SERVED
-     });
-    // orders.push({	
-    //     id:9,
-    //     number:"108",
-    //     name : "",
-    //     seat:"",
-    //     isAddOn:false,
-    //     state:STATUS_SERVED
-    // });
-    orders.push({
-        id: 10,
-        number: "101",
-        name: "",
-        seat: "",
-        isAddOn: false,
-        state: STATUS_SERVED
-    });
+    }
 
-
-    orders.push(
-        {
-            id: 11,
-            number: "110",
-            name: "",
-            seat: "",
-            isAddOn: false,
-            state: STATUS_NOT_PREPARED
-        });
-
-
-
-    //timers.push({ id: 5, number: "104", totalSeconds: 10 });
-
+    for(var i=0;i<preparedCount;i++){
+        orders.push(
+            {
+                id: i,
+                number: 200 + i,
+                name: "",
+                seat: "",
+                isAddOn: false,
+                state: STATUS_SERVED
+            });
+    }
 }
 
 //This method only generated new number to test done (STATUS_SERVED) orders not for In progress orders.

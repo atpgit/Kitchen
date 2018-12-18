@@ -1,20 +1,20 @@
 @media only screen and (min-width: 1736px) {
 	.top-number-area { height: 505px; }
 	.small-number-box { margin-bottom:5px;height:240px; }
-	#hazirlaniyorField { margin-top:50px; }
+	.hazirlaniyorFieldArea { height: 500px;display: grid;align-items: center; }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1735px) {
 	.top-number-area { height:345px; }
 	.small-number-box {margin-bottom: 5px;height: 160px;font-size: 125px;}
 	.large-number-box {height:200px;font-size:125px; }
-	#hazirlaniyorField {margin-top: 25px;}
+	.hazirlaniyorFieldArea {height: 340px;display: grid;align-items: center;}
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
 	.top-number-area {height: 355px;}
 	.small-number-box { height: 165px;font-size:105px;margin-bottom:5px; }
 	.large-number-box {height:180px;font-size:110px; }
-	#hazirlaniyorField {margin-top: 25px;}
+	.hazirlaniyorFieldArea {height: 350px;display: grid;align-items: center;}
 }
 
 @media only screen and (min-width: 720px) and (max-width: 767px) {
@@ -42,6 +42,15 @@
 	.large-number-area { padding:10px; }
 	.large-number-area img { margin-bottom:30px; }
 	.large-number-box {height:200px;font-size:150px; }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1049px) {
+	.top-number-area {padding: 20px;}
+	.top-number-area img {margin-bottom: 15px;}
+	.small-number-box {height: 200px;font-size: 135px;}
+	.large-number-area {padding: 10px;}
+	.large-number-area img {margin-bottom: 30px;}
+	.large-number-box {height: 200px;font-size: 150px;}
 }
 
 @media only screen and (min-width: 1050px) and (max-width: 1079px) {

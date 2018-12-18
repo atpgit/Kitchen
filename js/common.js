@@ -38,7 +38,7 @@ function inProgressOrdersPrereation() {
     var source = document.getElementById('inprogressOrder-template').innerHTML;
     var template = Handlebars.compile(source);
 
-    var inprogressOrdersWrapper = { inprogressOrders: getSubsetOfArray(getInProgressOrders().reverse().slice(0, 4)) };
+    var inprogressOrdersWrapper = { inprogressOrders: getSubsetOfArray(getInProgressOrders().reverse(),8) };
     var htmls = template(inprogressOrdersWrapper);
     $("#inProgressOrders").html(htmls);
 }
@@ -50,7 +50,7 @@ function doneOrdersPrereation() {
   //  }
     var source = document.getElementById("progressDone-template").innerHTML;
     var template = Handlebars.compile(source);
-    var doneProg = getSubsetOfArray(getReadyOrders().reverse());
+    var doneProg = getSubsetOfArray(getReadyOrders().reverse(),4);
     if (doneProg.length == 0){
         var doneOrderProgress = { doneProgress: doneProg };
         var htmls = template(doneOrderProgress);
@@ -70,9 +70,12 @@ function doneOrdersPrereation() {
 
 function onLoad() {
     //This method gets static fake inprogress and ready orders
-    fakeData();
     //every 20 sec. this method pushes new order with dynamic order number to the order array
     //setInterval(GetDataFromService, 6000);
+    var env =  getQueryVariable("env");
+    if(env == "dev"){
+        fakeData();
+    }
     configure();
     setInterval(onTick, 1000);
 
@@ -80,11 +83,13 @@ function onLoad() {
 }
 
 
-
+var options;
 // This function configures the page settings from the generated JSON file
 function configure() {
     $.getJSON("../js/customerdisplayconfig.json", function (config) {
-        // Set main configuration
+        //kullanilmiyor sanki !!
+        
+        //Set main configuration
         rows = config.rows;
         headertopmargin = config.headertopmargin;
         middletopmargin = config.middletopmargin;
@@ -101,6 +106,7 @@ function configure() {
         timer = config.timer;
         bgColor = config.bgColor;
         cellColor = config.cellColor;
+        
     });
 }
 
@@ -209,8 +215,8 @@ function getReadyOrders() {
 
 // Utility function to pull a subset of an array
 // Will pull as many elements as possible
-function getSubsetOfArray(array) {
-    var number = rows * columns;
+function getSubsetOfArray(array, number) {
+    //var number = rows * columns;
     var subset = [];
     var lengthOfArray = array.length;
     for (var i = 0; i < number && i < lengthOfArray; i++) {
@@ -234,3 +240,18 @@ function formatTimer(order, timer) {
 $(document).ready(function () {
     onLoad();
 });
+
+function getQueryVariable(variable)
+{ 
+  var query = window.location.search.substring(1); 
+  var vars = query.split("&"); 
+  for (var i=0;i<vars.length;i++)
+  { 
+    var pair = vars[i].split("="); 
+    if (pair[0] == variable)
+    { 
+      return pair[1]; 
+    } 
+  }
+  return -1; //not found 
+}
