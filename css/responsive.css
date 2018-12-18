@@ -1,26 +1,35 @@
+@media only screen and (min-width: 1736px) {
+	.top-number-area { height: 505px; }
+	.small-number-box { margin-bottom:5px;height:240px; }
+	#hazirlaniyorField { margin-top:50px; }
+}
 @media only screen and (min-width: 1366px) and (max-width: 1735px) {
-    .small-number-box { height: 160px;font-size:125px; }
+	.top-number-area { height:345px; }
+	.small-number-box {margin-bottom: 5px;height: 160px;font-size: 125px;}
 	.large-number-box {height:200px;font-size:125px; }
+	#hazirlaniyorField {margin-top: 25px;}
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
-	.small-number-box { height: 165px;font-size:105px; }
+	.top-number-area {height: 355px;}
+	.small-number-box { height: 165px;font-size:105px;margin-bottom:5px; }
 	.large-number-box {height:180px;font-size:110px; }
+	#hazirlaniyorField {margin-top: 25px;}
 }
 
 @media only screen and (min-width: 720px) and (max-width: 767px) {
-	.top-number-area { padding:20px; }
+	.top-number-area { padding:20px;height:1150px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:225px;font-size:108px; }
+	.small-number-box { height:225px;font-size:108px;margin-bottom:20px; }
 	.large-number-area { padding:10px; }
-	.large-number-area img { margin-bottom:30px; }
+	.large-number-area img { margin-bottom:12px; }
 	.large-number-box {height:225px;font-size:150px; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 900px) {
-	.top-number-area { padding:20px; }
+	.top-number-area { padding: 20px;height: 1215px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:240px;font-size:118px; }
+	.small-number-box { height:240px;font-size:118px;margin-bottom:10px; }
 	.large-number-area { padding:10px; }
 	.large-number-area img { margin-bottom:10px; }
 	.large-number-box {height:240px;font-size:150px;margin-bottom: 10px; }
@@ -36,18 +45,18 @@
 }
 
 @media only screen and (min-width: 1050px) and (max-width: 1079px) {
-	.top-number-area { padding:20px; }
+	.top-number-area { padding:20px;height:1470px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:290px;font-size:165px; }
+	.small-number-box { height:290px;font-size:165px;margin-bottom:10px; }
 	.large-number-area { padding:25px; }
 	.large-number-area img { margin-bottom:5px; }
 	.large-number-box {height:290px;font-size:168px;margin-bottom: 10px; }
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1100px) {
-	.top-number-area { padding:20px; }
+	.top-number-area { padding: 20px;height: 1690px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:345px;font-size:175px; }
+	.small-number-box { height:345px;font-size:175px;margin-bottom:10px; }
 	.large-number-area { padding:25px; }
 	.large-number-area img { margin-bottom:5px; }
 	.large-number-box {height:345px;font-size:168px;margin-bottom: 10px; }
