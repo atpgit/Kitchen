@@ -36,21 +36,47 @@
 }
 
 @media only screen and (min-width: 901px) and (max-width: 960px) {
-	.top-number-area { padding:20px; }
+	.top-number-area { padding:20px;height:1125px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:200px;font-size:135px; }
+	.small-number-box { height:215px;font-size:155px;margin-bottom:10px; }
 	.large-number-area { padding:10px; }
-	.large-number-area img { margin-bottom:30px; }
-	.large-number-box {height:200px;font-size:150px; }
+	.large-number-area img { margin-bottom:5px; }
+	.large-number-box {height:212px;font-size:150px;margin-bottom:15px; }
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1049px) {
-	.top-number-area {padding: 20px;}
+	.top-number-area { height:615px;padding: 20px;}
 	.top-number-area img {margin-bottom: 15px;}
-	.small-number-box {height: 200px;font-size: 135px;}
+	.small-number-box {height: 87px;font-size: 95px;margin-bottom:5px;}
 	.large-number-area {padding: 10px;}
-	.large-number-area img {margin-bottom: 30px;}
-	.large-number-box {height: 200px;font-size: 150px;}
+	.large-number-area img {margin-bottom: 0px;}
+	.large-number-box {height: 88px;font-size: 90px;margin-bottom:5px; }
+	.hazirlaniyorFieldArea2 {
+		width: 567px;
+		text-align: center;
+	}
+
+		.hazirlaniyorFieldArea2 img {
+			width: 50%;
+		}
+
+	.hazirFieldArea {
+		width: 376px;
+		text-align: center;
+	}
+
+		.hazirFieldArea img {
+			width: 47%;
+		}
+
+	.altMessageArea {
+		width: 990px;
+		text-align: center;
+	}
+
+		.altMessageArea img {
+			width: 55%;
+		}
 }
 
 @media only screen and (min-width: 1050px) and (max-width: 1079px) {
@@ -69,4 +95,20 @@
 	.large-number-area { padding:25px; }
 	.large-number-area img { margin-bottom:5px; }
 	.large-number-box {height:345px;font-size:168px;margin-bottom: 10px; }
+
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1152px) {
+	.top-number-area {height: 740px;padding: 20px;}
+	.top-number-area img {margin-bottom: 15px;}
+	.small-number-box {height: 140px;font-size: 150px;margin-bottom: 5px;}
+	.large-number-area {padding: 10px;}
+	.large-number-area img {margin-bottom: 15px;}
+	.large-number-box {height: 140px;font-size: 150px;margin-bottom: 5px;}
+	.hazirlaniyorFieldArea2 { width:567px;text-align:center; }
+	.hazirlaniyorFieldArea2 img {width: 50%;}
+	.hazirFieldArea { width:376px;text-align:center; }
+	.hazirFieldArea img {width: 47%;}
+	.altMessageArea { width:990px;text-align:center; }
+	.altMessageArea img { width:55%; }
 }
