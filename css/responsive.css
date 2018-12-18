@@ -1,39 +1,54 @@
 @media only screen and (min-width: 1366px) and (max-width: 1735px) {
-    .large-number-box {height:200px; }
-    }
-
-
-    @media only screen and (min-width: 1280px) and (max-width: 1735px) {
-        .small-number-box { font-size:120px}
-        .large-number-box {height:200px;font-size:125px; }
+    .small-number-box { height: 160px;font-size:125px; }
+	.large-number-box {height:200px;font-size:125px; }
 }
 
-@media only screen and (min-width: 1155px) and (max-width: 1280px) {
-    .small-number-box { font-size:85px}
-	.large-number-box { height:215px;font-size:110px }
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+	.small-number-box { height: 165px;font-size:105px; }
+	.large-number-box {height:180px;font-size:110px; }
 }
 
-@media only screen and (min-width: 1080px) and (max-width: 1155px) {
-    .small-number-box {height:90px;font-size:76px}
-	.large-number-box {height:225px;font-size:100px }
+@media only screen and (min-width: 720px) and (max-width: 767px) {
+	.top-number-area { padding:20px; }
+	.top-number-area img { margin-bottom:15px; }
+	.small-number-box { height:225px;font-size:108px; }
+	.large-number-area { padding:10px; }
+	.large-number-area img { margin-bottom:30px; }
+	.large-number-box {height:225px;font-size:150px; }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1079px) {
-    .small-number-box { height:88px;font-size:70px}
-	.large-number-box { height:220px;font-size:95px }
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+	.top-number-area { padding:20px; }
+	.top-number-area img { margin-bottom:15px; }
+	.small-number-box { height:240px;font-size:118px; }
+	.large-number-area { padding:10px; }
+	.large-number-area img { margin-bottom:10px; }
+	.large-number-box {height:240px;font-size:150px;margin-bottom: 10px; }
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1025px) {
-    .small-number-box { height:88px;font-size:66px}
-	.large-number-box {height:220px;font-size:90px }
+@media only screen and (min-width: 901px) and (max-width: 960px) {
+	.top-number-area { padding:20px; }
+	.top-number-area img { margin-bottom:15px; }
+	.small-number-box { height:200px;font-size:135px; }
+	.large-number-area { padding:10px; }
+	.large-number-area img { margin-bottom:30px; }
+	.large-number-box {height:200px;font-size:150px; }
 }
 
-@media only screen and (min-width: 891px) and (max-width: 992px) {
-    .small-number-box { height:88px;font-size:80px}
-    .large-number-box {height:220px;font-size:160px }
-    }
-
-@media only screen and (min-width: 768px) and (max-width: 890px) {
-    .small-number-box {height:100px;font-size:59px}
+@media only screen and (min-width: 1050px) and (max-width: 1079px) {
+	.top-number-area { padding:20px; }
+	.top-number-area img { margin-bottom:15px; }
+	.small-number-box { height:290px;font-size:165px; }
+	.large-number-area { padding:25px; }
+	.large-number-area img { margin-bottom:5px; }
+	.large-number-box {height:290px;font-size:168px;margin-bottom: 10px; }
 }
 
+@media only screen and (min-width: 1080px) and (max-width: 1100px) {
+	.top-number-area { padding:20px; }
+	.top-number-area img { margin-bottom:15px; }
+	.small-number-box { height:345px;font-size:175px; }
+	.large-number-area { padding:25px; }
+	.large-number-area img { margin-bottom:5px; }
+	.large-number-box {height:345px;font-size:168px;margin-bottom: 10px; }
+}

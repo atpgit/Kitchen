@@ -70,7 +70,7 @@ function doneOrdersPrereation() {
 
 function onLoad() {
     //This method gets static fake inprogress and ready orders
-   // fakeData();
+    fakeData();
     //every 20 sec. this method pushes new order with dynamic order number to the order array
     //setInterval(GetDataFromService, 6000);
     configure();

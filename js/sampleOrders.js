@@ -36,7 +36,7 @@ function fakeData() {
         isAddOn: false,
         state: STATUS_NOT_PREPARED
     });
-    timers.push({ id: 3, number: "102", totalSeconds: 10 });
+    //timers.push({ id: 3, number: "102", totalSeconds: 10 });
     orders.push({	
         id:4,
         number:"203",
@@ -46,38 +46,38 @@ function fakeData() {
         state:STATUS_SERVED
     });
     // //timers.push({ id: 4, number: "103", totalSeconds: 10 });
-    // orders.push({	
-    //     id:5,
-    //     number:"104",
-    //     name : "",
-    //     seat:"",
-    //     isAddOn:false,
-    //     state:STATUS_SERVED
-    // });
-    // orders.push({	
-    //     id:6,
-    //     number:"105",
-    //     name : "",
-    //     seat:"",
-    //     isAddOn:false,
-    //     state:STATUS_SERVED
-    // });
-    // orders.push({	
-    //     id:7,
-    //     number:"106",
-    //     name : "",
-    //     seat:"",
-    //     isAddOn:false,
-    //     state:STATUS_SERVED
-    // });
-    // orders.push({	
-    //     id:8,
-    //     number:"107",
-    //     name : "",
-    //     seat:"",
-    //     isAddOn:false,
-    //     state:STATUS_SERVED
-    // });
+     orders.push({	
+         id:5,
+         number:"104",
+         name : "",
+         seat:"",
+         isAddOn:false,
+         state:STATUS_NOT_PREPARED
+     });
+     orders.push({	
+         id:6,
+         number:"105",
+         name : "",
+         seat:"",
+         isAddOn:false,
+         state:STATUS_NOT_PREPARED
+     });
+     orders.push({	
+         id:7,
+         number:"106",
+         name : "",
+         seat:"",
+         isAddOn:false,
+         state:STATUS_SERVED
+     });
+     orders.push({	
+         id:8,
+         number:"107",
+         name : "",
+         seat:"",
+         isAddOn:false,
+         state:STATUS_SERVED
+     });
     // orders.push({	
     //     id:9,
     //     number:"108",
