@@ -73,6 +73,16 @@ function onLoad() {
     //every 20 sec. this method pushes new order with dynamic order number to the order array
     //setInterval(GetDataFromService, 6000);
     var env =  getQueryVariable("env");
+    try{
+        var ver = navigator.appVersion.match(/.*Chrome\/([0-9\.]+)/)[1];
+        
+        document.getElementById("versionField").innerText = ver;
+    }
+    catch(e){
+        console.log(e);
+    }
+    
+    
     if(env == "dev"){
         fakeData();
     }
@@ -128,6 +138,8 @@ function onTick() {
     }
     inProgressOrdersPrereation();
     doneOrdersPrereation();
+
+    
 
 }
 

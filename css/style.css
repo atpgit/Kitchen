@@ -82,5 +82,5 @@
   .altMessage{
       position: fixed;
       bottom: 0;
-      width: auto;
+      xwidth: auto;
   }
