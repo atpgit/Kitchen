@@ -1,27 +1,62 @@
 $(document).ready(function () {
-    var x = $("#hazirlaniyorField");
-    x.attr("src","images/" + brand + "_SiparisEkran_baslik.png")
-	
-	var x = $("#hazirlaniyorField2");
-    x.attr("src","images/" + brand + "_SiparisEkran_baslik2.png")
 
-    x = $("#hazirField");
-    x.attr("src","images/" + brand + "_SiparisEkran.png")
-	
-	x = $("#hazirField2");
-    x.attr("src","images/" + brand + "_SiparisEkran2.png")
-
-    x = $("#altMesajField");
-    x.attr("src","images/" + brand + "_SiparisEkran_altyazi.png")
-	
-	x = $("#altMesajField2");
-    x.attr("src","images/" + brand + "_SiparisEkran_altyazi.png")
-
+    loadTemplates();
 
     var brandCss = $("<link href=\"images/" + brand + "_brand.css\" rel=\"stylesheet\">");
     $('head').append(brandCss);
-    //x = $("#brandCss");
-    //x.attr("hrep",brand+"/brand.css")
+
+    var responseCss = $("<link href=\"css/responsive-"+displayOrientation+".css\" rel=\"stylesheet\">");
+    $('head').append(responseCss);
+
 
     
+
+
 })
+
+function loadTemplates() {
+
+    $.ajax({
+        type: 'GET',
+        url: "js/inprogressOrder-template-" + displayOrientation +".html",//ports and url can be change by environment
+        dataType: "html",
+
+        success: function (data) {
+            var js = $("<script id=\"inprogressOrder-template\" type=\"text/x-handlebars-template\">" + data + "</script>");
+            $('head').append(js);
+        }
+    });
+
+    $.ajax({
+        type: 'GET',
+        url: "js/progressDone-template-" + displayOrientation +".html",//ports and url can be change by environment
+        dataType: "html",
+
+        success: function (data) {
+            var js = $("<script id=\"progressDone-template\" type=\"text/x-handlebars-template\">" + data + "</script>");
+            $('head').append(js);
+        }
+    });
+
+    $.ajax({
+        type: 'GET',
+        url: "js/master-template-" + displayOrientation +".html",//ports and url can be change by environment
+        dataType: "html",
+
+        success: function (data) {
+            $('#content').append(data);
+
+            var x = $("#hazirlaniyorField");
+            var path = "images/" + brand + "_";
+            x.attr("src", path + "SiparisEkran_baslik-" + displayOrientation + ".png")
+
+            x = $("#hazirField");
+            x.attr("src", path + "SiparisEkran-" + displayOrientation + ".png")
+
+            x = $("#altMesajField");
+            x.attr("src", path + "SiparisEkran_altyazi-" + displayOrientation + ".png")
+
+            
+        }
+    });
+}

@@ -1,0 +1,33 @@
+@media only screen and (min-width: 720px) and (max-width: 1279px) {
+	.small-number-box { margin-bottom:5px;height:95px;font-size: 50px; }
+	.large-number-box {height:130px;font-size:55px; }
+	.hazirlaniyorFieldArea {height: 340px;display: grid;align-items: center;}
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
+	.small-number-box { margin-bottom:5px;height:160px;font-size: 115px; }
+	.large-number-box {height:195px;font-size:115px; }
+	.hazirlaniyorFieldArea {height: 340px;display: grid;align-items: center;}
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+	.small-number-box { margin-bottom:5px;height:173px;font-size: 115px; }
+	.large-number-box {height:195px;font-size:115px; }
+	.hazirlaniyorFieldArea {height: 340px;display: grid;align-items: center;}
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+	.small-number-box { margin-bottom:5px;height:210px;font-size: 144px; }
+	.large-number-box {height:235px;font-size:135px; }
+	.hazirlaniyorFieldArea {height: 420px;display: grid;align-items: center;}
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3839px) {
+	.small-number-box { margin-bottom:5px;height:260px;font-size: 180px; }
+	.large-number-box {height:260px;font-size:175px; }
+	.hazirlaniyorFieldArea {height: 518px;display: table-cell;vertical-align: middle;}
+}
+
+@media only screen and (min-width: 3840px) and (max-width: 4095px) {
+	.hazirlaniyorFieldArea {height: 445px;display: grid;align-items: center;}
+}

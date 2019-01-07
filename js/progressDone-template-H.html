@@ -1,0 +1,11 @@
+{{#each doneProgress}}
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail large-number-box  align-middle-center">
+        {{#if @first}}
+        <div class="blink">{{number}}</div>
+        {{else}}
+        <div>{{number}}</div>
+        {{/if}}
+    </div>
+</div>
+{{/each}}

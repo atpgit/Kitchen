@@ -6,7 +6,7 @@
 }
 */
 
-.container-fluid img { width:92%; }
+.container-fluid img { width:100%; }
 .align-middle-center{
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -23,7 +23,7 @@
 
 .top-number-area { border-bottom:1px solid #EAEAF4;margin-bottom:20px;
     }
-.small-number-box {text-align:center;height:260px;font-size:180px;overflow:hidden;padding-top:5px;margin-top:0px;margin-bottom: 0px;
+.small-number-box {text-align:center;height:225px;font-size:180px;overflow:hidden;padding-top:5px;margin-top:0px;margin-bottom: 5px;
     border: 1px solid #FFFFFF28;
     
     color: #FFFFFF;
@@ -82,5 +82,5 @@
   .altMessage{
       position: fixed;
       bottom: 0;
-      xwidth: auto;
+      width: auto;
   }

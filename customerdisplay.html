@@ -12,8 +12,6 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	
-	<link href="css/responsive.css" rel="stylesheet">
-	
 	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
 	<script src="js/handlebars-v4.0.12.js" type="text/javascript"></script>
 	<script src="js/sampleOrders.js" type="text/javascript"></script>
@@ -27,82 +25,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-	<script id="inprogressOrder-template" type="text/x-handlebars-template">
-		{{#each inprogressOrders}}
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-			<div class="thumbnail small-number-box  align-middle-center">
-				<div>{{number}}</div>
-			</div>
-		</div>
-		{{/each}}
-	  </script>
-	<script id="progressDone-template" type="text/x-handlebars-template">
-		{{#each doneProgress}}
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-			<div class="thumbnail large-number-box  align-middle-center">
-				{{#if @first}}
-				<div class="blink">{{number}}</div>
-			{{else}}
-			<div>{{number}}</div>
-			{{/if}}
-			</div>
-		</div>
-		{{/each}}
-	</script>
 </head>
 
 <body style="overflow: hidden;line-height: 0.9">
 	<div style="position:absolute;right: 0;bottom: 0;" id="versionField">
 		
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-7 col-sm-7 col-md-7 col-lg-12 hazirlaniyor-container">
-				<div class="row top-number-area" style="padding:10px 0px;">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-						<div class="row align-middle-center">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="hazirlaniyorFieldArea"><img alt="HAZIRLANIYOR" id="hazirlaniyorField" class="visible-lg" /></div>
-								<div class="hazirlaniyorFieldArea2">
-									<img alt="HAZIRLANIYOR" id="hazirlaniyorField2" class="hidden-lg" /></div>
-								</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-						<div class="row" id="inProgressOrders">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-12">
-				<div class="row large-number-area">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-						<div class="row align-middle-center">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<img alt="HAZIR" id="hazirField" class="visible-lg" />
-								<div class="hazirFieldArea"><img alt="HAZIR" id="hazirField2" class="hidden-lg" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-						<div class="row" id="progressDone">
-
-						</div>
-						<div class="row">
-							<div class="hidden-xs hidden-sm hidden-md col-lg-12 altMessage">
-								<img alt="SİPARİŞİNİZİ ALABİLİRSİNİZ" id="altMesajField" class="" />
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-12 hidden-lg altMessage">
-				<div class="altMessageArea"><img alt="SİPARİŞİNİZİ ALABİLİRSİNİZ" id="altMesajField2" class="" /></div>
-			</div>
-		</div>
+	<div class="container-fluid" id="content">
+		
 		
 	</div>
 	<script src="brand.js" type="text/javascript"></script>
