@@ -76,7 +76,7 @@ function onLoad() {
     try{
         var ver = navigator.appVersion.match(/.*Chrome\/([0-9\.]+)/)[1];
         
-        document.getElementById("versionField").innerText = ver;
+        document.getElementById("versionField").innerText = ver + "\r\n" + window.innerWidth + "x" + window.innerHeight;
     }
     catch(e){
         console.log(e);
