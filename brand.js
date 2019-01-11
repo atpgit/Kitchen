@@ -1,2 +1,2 @@
 var brand = "BK";
-var displayOrientation = "H";
+var displayOrientation = "V";
