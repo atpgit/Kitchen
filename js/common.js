@@ -76,11 +76,20 @@ function onLoad() {
     try{
         var ver = navigator.appVersion.match(/.*Chrome\/([0-9\.]+)/)[1];
         
-        document.getElementById("versionField").innerText = ver + "\r\n" + window.innerWidth + "x" + window.innerHeight;
+		document.getElementById("versionField").innerText = ver;
     }
     catch(e){
         console.log(e);
-    }
+	}
+
+	try {
+		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		document.getElementById("versionField").innerText += "\r\n" +  w + "X" + h;
+	}
+	catch (e) {
+		console.log(e);
+	}
     
     
     if(env == "dev"){
