@@ -27,10 +27,15 @@
 
 </head>
 
-<body style="overflow: hidden;line-height: 0.9">
-	<div style="position:absolute;right: 0;bottom: 0;font-size:12px" id="versionField">
-		
+<body style="overflow: hidden;line-height: 0.9" onresize="setSizeInfo()">
+	
+	<div style="position:absolute;right: 0;bottom: 0;font-size:12px">
+		<div id="versionField">		
+		</div>	
+		<div id="resolutionField">
+		</div>	
 	</div>
+	
 	<div class="container-fluid" id="content">
 	</div>
 	<script src="brand.js" type="text/javascript"></script>

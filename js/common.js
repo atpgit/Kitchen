@@ -68,6 +68,17 @@ function doneOrdersPrereation() {
 }
 
 
+function setSizeInfo(){
+    try {
+        
+		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		document.getElementById("resolutionField").innerText = w + "X" + h;
+	}
+	catch (e) {
+		console.log(e);
+	}
+}
 function onLoad() {
     //This method gets static fake inprogress and ready orders
     //every 20 sec. this method pushes new order with dynamic order number to the order array
@@ -82,14 +93,7 @@ function onLoad() {
         console.log(e);
 	}
 
-	try {
-		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-		document.getElementById("versionField").innerText += "\r\n" +  w + "X" + h;
-	}
-	catch (e) {
-		console.log(e);
-	}
+    setSizeInfo();
     
     
     if(env == "dev"){
