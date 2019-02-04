@@ -1,24 +1,30 @@
-$(document).ready(function () {
+var options;
 
-    loadTemplates();
+function configure() {
+    $.getJSON("customerdisplayconfig.json", function (config) {
+        options = config;
+        $(document).ready(function () {
 
-    var brandCss = $("<link href=\"images/" + brand + "_brand.css\" rel=\"stylesheet\">");
-    $('head').append(brandCss);
+            loadTemplates();
+        
+            var brandCss = $("<link href=\"images/" + options.brand + "_brand.css\" rel=\"stylesheet\">");
+            $('head').append(brandCss);
+        
+            var responseCss = $("<link href=\"css/responsive-"+options.displayOrientation+".css\" rel=\"stylesheet\">");
+            $('head').append(responseCss);
+        })
+        
+    });
+}
 
-    var responseCss = $("<link href=\"css/responsive-"+displayOrientation+".css\" rel=\"stylesheet\">");
-    $('head').append(responseCss);
 
 
-    
-
-
-})
 
 function loadTemplates() {
 
     $.ajax({
         type: 'GET',
-        url: "js/inprogressOrder-template-" + displayOrientation +".html",//ports and url can be change by environment
+        url: "js/inprogressOrder-template-" + options.displayOrientation +".html",//ports and url can be change by environment
         dataType: "html",
 
         success: function (data) {
@@ -29,7 +35,7 @@ function loadTemplates() {
 
     $.ajax({
         type: 'GET',
-        url: "js/progressDone-template-" + displayOrientation +".html",//ports and url can be change by environment
+        url: "js/progressDone-template-" + options.displayOrientation +".html",//ports and url can be change by environment
         dataType: "html",
 
         success: function (data) {
@@ -40,21 +46,21 @@ function loadTemplates() {
 
     $.ajax({
         type: 'GET',
-        url: "js/master-template-" + displayOrientation +".html",//ports and url can be change by environment
+        url: "js/master-template-" + options.displayOrientation +".html",//ports and url can be change by environment
         dataType: "html",
 
         success: function (data) {
             $('#content').append(data);
 
             var x = $("#hazirlaniyorField");
-            var path = "images/" + brand + "_";
-            x.attr("src", path + "SiparisEkran_baslik-" + displayOrientation + ".png")
+            var path = "images/" + options.brand + "_";
+            x.attr("src", path + "SiparisEkran_baslik-" + options.displayOrientation + ".png")
 
             x = $("#hazirField");
-            x.attr("src", path + "SiparisEkran-" + displayOrientation + ".png")
+            x.attr("src", path + "SiparisEkran-" + options.displayOrientation + ".png")
 
             x = $("#altMesajField");
-            x.attr("src", path + "SiparisEkran_altyazi-" + displayOrientation + ".png")
+            x.attr("src", path + "SiparisEkran_altyazi-" + options.displayOrientation + ".png")
 
             
         }

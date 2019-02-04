@@ -1,26 +1,26 @@
-window.onerror = function (e, z) {
-    alert(e);
-};
+// window.onerror = function (e, z) {
+//     //alert(e);
+// };
 var orders = new Array();
 var timers = new Array();
 // SETTINGS
 //
 // Defaults:
-var rows = 2;
-var columns = 2;
-var showOrderNumber = true;
-var showOrderName = true;
-var inProgressEnabled = true;
-var readyLabel = "READY";
-var inProgressLabel = "IN PROGRESS";
-var headerSubtitle = "ORDERS";
+//var rows = 2;
+//var columns = 2;
+//var showOrderNumber = true;
+//var showOrderName = true;
+//var inProgressEnabled = true;
+//var readyLabel = "READY";
+//var inProgressLabel = "IN PROGRESS";
+//var headerSubtitle = "ORDERS";
 var timer = true;
-var adGraphics = new Array();
-var adDelay = 10;
-var elapsedAdTime = 0;
-var adIndex = 0;
-var bgColor = "#fff";
-var cellColor = "transparent";
+//var adGraphics = new Array();
+//var adDelay = 10;
+//var elapsedAdTime = 0;
+//var adIndex = 0;
+//var bgColor = "#fff";
+//var cellColor = "transparent";
 // Updated by Aloha Kitchen
 
 // Constant values
@@ -31,7 +31,7 @@ var STATUS_FULLY_PREPARED = 3;                                    // ...
 var STATUS_SERVED = 4;                                            // READY
 
 window.onerror = function (e) {
-    alert(e);
+    document.getElementById("errorField").innerText = e;
 };
 
 function inProgressOrdersPrereation() {
@@ -70,13 +70,13 @@ function doneOrdersPrereation() {
 
 function setSizeInfo(){
     try {
-        
 		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-		document.getElementById("resolutionField").innerText = w + "X" + h;
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        
+		document.getElementById("resolutionField").innerText = w + " x " + h + " ("+ window.outerWidth + " x " + window.outerHeight + ")";
 	}
 	catch (e) {
-		console.log(e);
+		document.getElementById("errorField").innerText = e;
 	}
 }
 function onLoad() {
@@ -90,7 +90,7 @@ function onLoad() {
 		document.getElementById("versionField").innerText = ver;
     }
     catch(e){
-        console.log(e);
+        document.getElementById("errorField").innerText = e;
 	}
 
     setSizeInfo();
@@ -106,32 +106,6 @@ function onLoad() {
 }
 
 
-var options;
-// This function configures the page settings from the generated JSON file
-function configure() {
-    $.getJSON("../js/customerdisplayconfig.json", function (config) {
-        //kullanilmiyor sanki !!
-        
-        //Set main configuration
-        rows = config.rows;
-        headertopmargin = config.headertopmargin;
-        middletopmargin = config.middletopmargin;
-
-        columns = config.columns;
-        showOrderNumber = config.showOrderNumber;
-        showOrderName = config.showOrderName;
-        inProgressEnabled = config.inProgressEnabled;
-
-        readyLabel = config.readyLabel;
-        inProgressLabel = config.inProgressLabel;
-
-        headerSubtitle = config.headerSubtitle;
-        timer = config.timer;
-        bgColor = config.bgColor;
-        cellColor = config.cellColor;
-        
-    });
-}
 
 // Adds a second to each of the timers, and then refreshes the table
 function onTick() {
@@ -141,14 +115,14 @@ function onTick() {
         var timer = timers[t];
         timer.totalSeconds++;
     }
-    elapsedAdTime++;
-    if (adGraphics.length > 1 && elapsedAdTime >= adDelay) {
-        adIndex++;
-        if (adIndex >= adGraphics.length) {
-            adIndex = 0;
-        }
-        elapsedAdTime = 0;
-    }
+    //elapsedAdTime++;
+    // if (adGraphics.length > 1 && elapsedAdTime >= adDelay) {
+    //     adIndex++;
+    //     if (adIndex >= adGraphics.length) {
+    //         adIndex = 0;
+    //     }
+    //     elapsedAdTime = 0;
+    // }
     inProgressOrdersPrereation();
     doneOrdersPrereation();
 
