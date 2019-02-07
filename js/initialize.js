@@ -1,7 +1,7 @@
 var options;
 
 function configure() {
-    $.getJSON("customerdisplayconfig.json", function (config) {
+    $.getJSON("js/customerdisplayconfig.json", function (config) {
         options = config;
         $(document).ready(function () {
 
