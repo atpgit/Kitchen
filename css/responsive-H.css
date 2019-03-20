@@ -10,7 +10,7 @@
 	.hazirlaniyorFieldArea {height: 307px;display: grid;align-items: center;}
 }
 
-@media only screen and (min-width: 1360px) and (max-width: 1366px) {
+@media only screen and (min-width: 1354px) and (max-width: 1366px) {
 	.small-number-box { margin-bottom:5px;height:165px;font-size: 115px; }
 	.large-number-box {height:192px;font-size:115px; }
 	.hazirlaniyorFieldArea {height: 325px;display: grid;align-items: center;}
