@@ -4,7 +4,7 @@
 	.hazirlaniyorFieldArea {height: 192px;display: grid;align-items: center;}
 }
 
-@media only screen and (min-width: 1274px) and (max-width: 1280px) {
+@media only screen and (min-width: 1272px) and (max-width: 1280px) {
 	.small-number-box { margin-bottom:5px;height:154px;font-size: 115px; }
 	.large-number-box {height:170px;font-size:110px; }
 	.hazirlaniyorFieldArea {height: 307px;display: grid;align-items: center;}
@@ -16,13 +16,13 @@
 	.hazirlaniyorFieldArea {height: 325px;display: grid;align-items: center;}
 }
 
-@media only screen and (min-width: 1914px) and (max-width: 1920px) {
+@media only screen and (min-width: 1912px) and (max-width: 1922px) {
 	.small-number-box { margin-bottom:5px;height:245px;font-size: 180px; }
 	.large-number-box {height:260px;font-size:175px; }
 	.hazirlaniyorFieldArea {height: 490px;display: table-cell;vertical-align: middle;}
 }
 
-@media only screen and (min-width: 3834px) and (max-width: 3840px) {
+@media only screen and (min-width: 3832px) and (max-width: 3840px) {
 	.small-number-box { margin-bottom:5px;height:531px;font-size: 335px; }
 	.large-number-box {height:557px;font-size:317px; }
 	.hazirlaniyorFieldArea {height: 1045px;display: grid;align-items: center;}

@@ -1,10 +1,11 @@
 var options;
 
-function configure() {
+function configure(onConfigLoad) {
     $.getJSON("js/customerdisplayconfig.json", function (config) {
+        onConfigLoad && onConfigLoad(config);
         options = config;
         $(document).ready(function () {
-
+            
             loadTemplates();
         
             var brandCss = $("<link href=\"images/" + options.brand + "_brand.css\" rel=\"stylesheet\">");
@@ -12,6 +13,7 @@ function configure() {
         
             var responseCss = $("<link href=\"css/responsive-"+options.displayOrientation+".css\" rel=\"stylesheet\">");
             $('head').append(responseCss);
+            
         })
         
     });

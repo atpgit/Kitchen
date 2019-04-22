@@ -41,6 +41,7 @@ function inProgressOrdersPrereation() {
     var inprogressOrdersWrapper = { inprogressOrders: getSubsetOfArray(getInProgressOrders().reverse(),8) };
     var htmls = template(inprogressOrdersWrapper);
     $("#inProgressOrders").html(htmls);
+    
 }
 var firstDoneItem=0;
 function doneOrdersPrereation() {
@@ -65,6 +66,8 @@ function doneOrdersPrereation() {
         var htmls = template(doneOrderProgress);
         $("#progressDone").html(htmls);
     }
+
+    
 }
 
 
@@ -97,11 +100,32 @@ function onLoad() {
     
     if(env == "dev"){
         fakeData();
-    }
-    configure();
+        
+	}
+	
+    switchInfoFieldVisibility(env == "dev");
+    configure(function(config){
+        
+        const br =  getQueryVariable("br");
+        if(br){
+            config.brand = br;
+        }
+        const or =  getQueryVariable("or");
+        if(or){
+            config.displayOrientation = or;
+        }
+
+    });
     setInterval(onTick, 1000);
+}
 
-
+function switchInfoFieldVisibility(value) {
+	try {
+		document.getElementById("infoField").style.display = value ? "block" : "none";
+	}
+	catch (e) {
+		console.log(e);
+	}
 }
 
 
@@ -125,9 +149,9 @@ function onTick() {
     inProgressOrdersPrereation();
     doneOrdersPrereation();
 
-    
-
 }
+var v1 = false;
+var v2 = false;
 
 // Lets us either add a brand new order, or update the status of an existing order.
 function showOrUpdateOrder(orderDto) {
@@ -251,5 +275,5 @@ function getQueryVariable(variable)
       return pair[1]; 
     } 
   }
-  return -1; //not found 
+  return "";
 }

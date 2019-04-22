@@ -4,30 +4,29 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
     font-family: 'MasterFont';
     font-weight: bold;
 
-    src: url('AR_brandFont.ttf');
+    src: url('UD_brandFont.otf');
 }
 
 
 .top-number-area{
-    background-color:#D61921;
+    background-color:#000000;
 }
 
 .small-number-box{
-    background-color:#D61921;
+    background-color:#000000;
 }
 
 .large-number-box{
     background-color:#6E3D2F20
 }
 
-
 @media only screen and (min-width:472px) and (max-width:480px) {
-	.top-number-area { padding: 20px;height: 630px; }
+	.top-number-area { padding: 20px;height: 620px !important; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:113px;font-size:61px !important;margin-bottom:10px; }
-	.large-number-area { padding:5px;margin-top: 8px; }
+	.small-number-box { height:104px !important;font-size:61px !important;margin-bottom:10px; }
+	.large-number-area { padding:5px;margin-top: 0px; }
 	.large-number-area img { margin-bottom:5px; }
-	.large-number-box {height:113px;font-size:85px;margin-bottom: 10px; }
+	.large-number-box {height:104px !important;font-size:85px;margin-bottom: 10px; }
 	.hazirFieldArea { margin-bottom: 5px; }
 	.hazirlaniyorFieldArea { text-align:center; }
 }
@@ -35,10 +34,10 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
 @media only screen and (min-width:712px) and (max-width:720px) {
 	.top-number-area { padding: 20px;height: 1120px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:223px;font-size:98px !important;margin-bottom:10px; }
+	.small-number-box { height:208px !important;font-size:98px !important;margin-bottom:10px; }
 	.large-number-area { padding:13px !important; }
 	.large-number-area img { margin-bottom:5px; }
-	.large-number-box {height:224px;font-size:135px !important;margin-bottom: 10px; }
+	.large-number-box {height:204px !important;font-size:135px !important;margin-bottom: 10px; }
 	.hazirFieldArea { margin-bottom: 8px; }
 	.hazirlaniyorFieldArea { text-align:center; }
 }
@@ -46,17 +45,17 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
 @media only screen and (min-width:760px) and (max-width:768px) {
 	.top-number-area { padding: 20px;height: 1199px; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:241px;font-size:109px !important;margin-bottom:10px; }
+	.small-number-box { height:225px !important;font-size:109px !important;margin-bottom:10px; }
 	.large-number-area { padding:14px !important; }
 	.large-number-area img { margin-bottom:5px; }
-	.large-number-box {height:242px;font-size:148px !important;margin-bottom: 10px; }
+	.large-number-box {height:218px !important;font-size:148px !important;margin-bottom: 10px; }
 	.hazirFieldArea { margin-bottom: 8px; }
 	.hazirlaniyorFieldArea { text-align:center; }
 }
 
 @media only screen and (min-width:1072px) and (max-width:1080px) {
-	.small-number-box { height:344px;font-size:134px;margin-bottom:10px; }
-	.large-number-box {height:344px;font-size:205px;margin-bottom: 10px; }
+	.small-number-box { height:320px !important;font-size:134px;margin-bottom:10px; }
+	.large-number-box {height:314px !important;font-size:205px;margin-bottom: 10px; }
 }
 
 @media only screen and (min-width: 1272px) and (max-width: 1280px) {
@@ -82,13 +81,13 @@ body {  font-family: 'MasterFont';line-height: 0.9 }
 }
 
 @media only screen and (min-width:2152px) and (max-width:2160px) {
-	.top-number-area { padding: 20px;height: 3474px !important; }
+	.top-number-area { padding: 20px;height: 3397px !important; }
 	.top-number-area img { margin-bottom:15px; }
-	.small-number-box { height:705px;font-size:360px !important;margin-bottom:10px; }
-	.large-number-area { padding:25px; }
+	.small-number-box { height:645px;font-size:360px !important;margin-bottom:10px; }
+	.large-number-area { padding:65px; }
 	.large-number-area img { margin-bottom:5px; }
-	.large-number-box {height:705px;font-size:440px;margin-bottom: 10px; }
-	.hazirFieldArea { margin-bottom: 8px; }
+	.large-number-box {height:632px;font-size:440px;margin-bottom: 10px; }
+	.hazirFieldArea { margin-bottom: 0px; }
 	.altMessageArea { width: 2090px; }
 	.hazirlaniyorFieldArea { text-align:center;padding: 10px;margin-bottom: 26px; }
 }
