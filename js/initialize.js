@@ -1,8 +1,18 @@
 var options;
+/*
+brand: BK, PE, AR, SB, UD, UP
+orientation: H, V
+language: default TR
+*/
 
 function configure(onConfigLoad) {
     $.getJSON("js/customerdisplayconfig.json", function (config) {
         onConfigLoad && onConfigLoad(config);
+
+        if (config.displayLanguage == undefined || config.displayLanguage.trim() == "") {
+            config.displayLanguage = "TR";
+        }
+
         options = config;
         $(document).ready(function () {
             
@@ -18,8 +28,6 @@ function configure(onConfigLoad) {
         
     });
 }
-
-
 
 
 function loadTemplates() {
@@ -56,13 +64,13 @@ function loadTemplates() {
 
             var x = $("#hazirlaniyorField");
             var path = "images/" + options.brand + "_";
-            x.attr("src", path + "SiparisEkran_baslik-" + options.displayOrientation + ".png")
+            x.attr("src", path + "SiparisEkran_baslik-" + options.displayOrientation + "-" + options.displayLanguage + ".png")
 
             x = $("#hazirField");
-            x.attr("src", path + "SiparisEkran-" + options.displayOrientation + ".png")
+            x.attr("src", path + "SiparisEkran-" + options.displayOrientation + "-" + options.displayLanguage + ".png")
 
             x = $("#altMesajField");
-            x.attr("src", path + "SiparisEkran_altyazi-" + options.displayOrientation + ".png")
+            x.attr("src", path + "SiparisEkran_altyazi-" + options.displayOrientation + "-" + options.displayLanguage + ".png")
 
             
         }
